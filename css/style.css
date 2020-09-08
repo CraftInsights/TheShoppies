@@ -1,0 +1,694 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Lattes - One page multi purpose page
+Version:	1.0
+Last change:	17/08/2015 [...]
+Designed by:	MOOZ Themes / www.MOOZthemes.com
+Primary use:	One page
+
+[Table of contents]
+
+1. General
+2. Header
+3. Navigation
+4. Sections
+5. Footer
+6. Components
+
+[Color codes]
+
+Buttons, etc:	#726FB9 (blue)
+hover color:	#fed136 (yellow)
+-------------------------------------------------------------------*/
+
+/*--------------------
+Import Google Fonts
+--------------------*/
+
+/* main font for menu. */
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+/* font for headings, text, tags */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic&subset=latin,latin-ext);
+
+html {
+    /* Load system fonts */
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
+      Roboto, Helvetica Neue, sans-serif;
+  
+    /* Make type rendering look crisper */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Disable auto-enlargement of small text in Safari */
+    text-size-adjust: 100%;
+  
+    /* Enable kerning and optional ligatures */
+    text-rendering: optimizeLegibility;
+  }
+  
+/**
+ * Form elements render using OS defaults,
+ * so font-family inheritance must be specifically declared
+ */
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+   font-family: inherit;
+ }
+
+
+
+/*--------------------
+1. General
+--------------------*/
+
+body {
+  margin: 0px;
+  font-family: "Open Sans", Sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-weight: 300;
+    letter-spacing: 0.4px;
+    font-family: "Open Sans", Sans-serif;
+    color: #232323;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+	line-height: 23px;
+    letter-spacing: 0.2px;
+    color: #797979;
+}
+
+a:hover, a:focus, a:active, a.active {
+    color: #fec503;
+}
+a, a:hover, a:focus, a:active, a.active {
+    outline: 0;
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+@media (min-width: 768px) {
+	section {
+	padding: 150px 0;
+	}
+}
+
+section {
+    padding: 70px 0;
+}
+
+/*--------------------
+2. Navigation
+--------------------*/
+
+.navbar-default {
+	background-color: #3F97C9;
+	border-color: transparent
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-family: "Montserrat",sans-serif;
+    padding: 0px;
+}
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
+	color: #fec503
+}
+.navbar-default .navbar-collapse {
+	border-color: rgba(255,255,255,.02)
+}
+.navbar-default .navbar-toggle {
+	background-color: #fed136;
+	border-color: #fed136
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
+	background-color: #fed136
+}
+.navbar-default .nav li a {
+	font-family: "Roboto",sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color:#637381
+}
+.navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
+	color: #212B36;
+	outline: 0
+}
+
+.navbar-default .navbar-nav>.active>a {
+	border-radius: 0;
+	color: #637381;
+	background-color: #212B36
+}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
+	color: #637381;
+	background-color: #212B36
+}
+
+@media (min-width:768px) {
+	.navbar-default
+	{
+		background-color: #FCEBDB;
+		padding: 25px 0;
+		-webkit-transition:padding .3s;
+		-moz-transition:padding .3s;
+		transition:padding .3s;
+		border:0
+	}
+	.navbar-default .navbar-brand {
+		font-size: 2em;
+		-webkit-transition:all .3s;
+		-moz-transition:all .3s;
+		transition:all .3s
+	}
+	.navbar-default .navbar-nav>.active>a {
+		border-radius: 3px
+	}
+	.navbar-default.navbar-shrink {
+		background-color: #FCEBDB;
+		padding: 10px 0
+	}
+	.navbar-default.navbar-shrink .navbar-brand {
+		font-size: 1.5em
+	}
+}
+
+/*--------------------
+3. Header
+--------------------*/
+
+header {
+    background-image: url(../images/Entreprenuer_Filmmaker_1.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #163f37;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text {
+	padding-top: 300px;
+	padding-bottom: 200px;
+	}
+}
+
+header .intro-text .intro-lead-in {
+    font-family: "Playfair Display",sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-lead-in {
+	font-family: "Playfair Display",sans-serif;
+	font-style: italic;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	}
+}
+
+header .intro-text .intro-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-heading {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 75px;
+	line-height: 75px;
+	margin-bottom: 50px;
+	}
+}
+
+/*--------------------
+4. Sections
+--------------------*/
+
+.section-title h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.section-title p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 20px 100px 60px 100px;
+}
+
+/*--------------------
+4.1. About
+--------------------*/
+
+.mz-module-about h3 {
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.mz-module-about p {
+font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #969696;
+}
+
+.ot-circle {
+height: 95px;
+    width: 95px;
+    text-align: center;
+    line-height: 98px;
+    color: #3E3E3E;
+    /* border: 3px solid #000; */
+    border-radius: 100px;
+    /* background-color: #E8E8E8; */
+    margin: 0 2px 4px;
+    font-size: 31px;
+}
+
+
+/*--------------------
+4.6. Team
+--------------------*/
+.owner-bg {
+    background-color: #E3F1DF;
+}
+.team-item {
+    text-align: center;
+    background-color: #fff;
+    align-self: ;
+    box-shadow: -3px 6px 4px #b3b3b3;
+}
+
+.team-item h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team-item .team-location {
+    color: #C5C5C5;
+    font-size: 13px;
+    margin-bottom: 20px;    
+}
+
+.team-item .team-location {
+    color: #C5C5C5;
+    font-size: 12px;
+    margin-bottom: 20px;    
+}
+
+.team-item .team-position {
+    color: #000;
+    font-size: 12px;
+}
+
+.team-item p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #9C9C9C;
+    padding: 5px 10px 20px 10px;
+}
+
+.team-item .container {
+    margin-top: 10px;
+    list-style: none;
+    width: 100%;
+    line-height: 40px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+}
+
+.team-item li { 
+    transition: 0.5s linear;
+}
+
+.team-item li span {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    background: rgb(221, 56, 56);
+}
+
+.contact .form-group {
+    display: block;
+    margin: auto;
+}
+
+ .row img {
+    display: block;
+    margin: auto;
+}
+
+
+
+/*--------------------
+5. Footer
+--------------------*/
+[role="contentinfo"] h2 {
+    font-size:1.6rem;
+    border-top:1px solid #CFE3DC;
+    color:#fff;
+    font-weight:700;
+    margin-top:20px;
+    padding:30px 0 10px;
+}
+    
+[role="contentinfo"] ul {
+    font-size:1.4rem;
+    font-weight:400;
+    list-style:none;
+    margin:15px 0 0;
+    padding:0 0 30px;
+}
+    
+[role="contentinfo"] ul a {
+    color:#F1FFF7;
+    text-decoration:none;
+}
+    
+[role="contentinfo"] ul a:hover,[role="contentinfo"] ul a:active,[role="contentinfo"] ul a:focus {
+    text-decoration:underline;
+}
+
+[role="contentinfo"] {
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+    position: relative;
+    background: #27678b;
+    clear: both;
+    margin-top: 0px;
+}
+
+[role="contentinfo"] .footer {
+    background: #173630;
+    margin-top: 20px;
+    color: #74b3d8;  
+    padding: 10px 0 30px;
+}
+
+[role="contentinfo"] .container {
+    overflow: hidden;
+}
+
+[role="contentinfo"] .footer .footer-logo {
+    float:left;
+    width:33%;
+}
+    
+[role="contentinfo"] .footer .logo {
+    margin-right:0;
+    margin-top:28px;
+}
+    
+.mdzr-svg [role="contentinfo"] .footer .logo {
+    background-position:left center;
+    margin-right:0;
+    margin-top:20px;
+}
+    
+[role="contentinfo"] .logo {
+    font-size:4rem;
+    font-family:Roboto, Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+    color:#fff;
+    display:block;
+    font-weight:700;
+    height:50px;
+    overflow:hidden;
+    text-decoration:none;
+    text-indent:100%;
+    width:142px;
+    margin:10px;
+}
+    
+.mdzr-svg [role="contentinfo"] .logo {
+    height:39px;
+    width:109px;
+}
+    
+[role="contentinfo"] .thanks {
+    display: inline-block;
+    font-size:1.2rem;
+    color:#fff;
+    margin:0;
+    padding:0;
+}
+    
+[role="contentinfo"] .thanks li {
+    display:block;
+    clear:both;
+    margin:0;
+    padding:17px 10px 11px;
+}
+    
+[role="contentinfo"] .thanks li span.ampersand {
+    line-height:24px;
+}
+    
+[role="contentinfo"] .thanks span {
+    display:block;
+    height:24px;
+    line-height:36px;
+    padding-right:12px;
+    white-space:nowrap;
+}
+    
+[role="contentinfo"] .thanks a {
+    display:block;
+    height:33px;
+    overflow:hidden;
+    text-indent:-200px;
+    width:94px;
+}
+    
+[role="contentinfo"] .thanks a.Github {
+    background:url(../images/githublogo.png) no-repeat left center;
+}
+    
+.mdzr-svg [role="contentinfo"] .thanks a.Github {
+    background:url(../images/Hosting_Githubpages.svg) no-repeat left center;
+}
+
+[role="contentinfo"] .thanks2 {
+    display: inline-block;
+    font-size:1.2rem;
+    color:#fff;
+    margin:0;
+    padding:0;
+}
+
+[role="contentinfo"] .thanks2 li {
+    display:block;
+    clear:both;
+    margin:0;
+    padding:17px 10px 11px;
+}
+    
+[role="contentinfo"] .thanks2 li span.ampersand {
+    line-height:24px;
+}
+    
+[role="contentinfo"] .thanks2 span {
+    display:block;
+    height:24px;
+    line-height:36px;
+    padding-right:12px;
+    white-space:nowrap;
+}
+    
+[role="contentinfo"] .thanks2 a {
+    display:block;
+    height:33px;
+    overflow:hidden;
+    text-indent:-200px;
+    width:94px;
+}
+
+[role="contentinfo"] .thanks2 a.Namecheap {
+    background:url(../images/Namecheap.png) no-repeat left center;
+}
+
+.mdzr-svg [role="contentinfo"] .thanks2 a.Namecheap {
+    background:url(../images/Namecheap.svg) no-repeat left center;
+}
+
+[role="contentinfo"] .copyright {
+    font-size:1.2rem;
+    clear:both;
+    margin:20px 0 0 10px;
+}
+    
+[role="contentinfo"] .copyright a {
+    color:#B7B7B7;
+}
+
+[role="contentinfo"] .thanks li.design span.ampersand.mooz,[role="contentinfo"] .thanks li.design a.mooz,.layout-2col:after,.list-image li:after {
+    clear:both;
+}
+
+
+.footer p {
+    display: inline-block;
+    color: #B7B7B7;
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+}
+.footer p.copyright{
+    color: #B7B7B7;
+}
+
+.footer p a span {
+    color: #0b1d28;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+/*--------------------
+7. Components
+--------------------*/
+
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #173630;
+    border-color: #173630;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open .dropdown-toggle.btn {
+    color: #fff;
+    background-color: #173630;
+    border-color: #173630;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #108043;
+    padding: 8px 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-xl {
+    color: #fff;
+    background-color: #108043;
+    border-color: #108043;
+    font-family: "Robot",sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+/* Back to top button
+---------------------------------- */
+#back-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 40px;
+    right: 50px;
+}
+#back-top a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #A9A9B1;
+    /* background color transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    background: #fed136;
+}
+/* arrow icon (span tag) */
+#back-top i {
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+#back-top {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}
+#back-top a {
+    width: 40px;
+    height: 40px;
+}
+#back-top i {
+    margin-top: 7px;
+    font-size: 20px;
+}
+}
